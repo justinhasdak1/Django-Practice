@@ -3,7 +3,7 @@ from django.shortcuts import render,HttpResponse
 # Create your views here.
 
 #Home
-def index(request):
+def home(request):
 
     context ={
         'variable1':"This is from variable1 context.",
