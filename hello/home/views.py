@@ -5,24 +5,24 @@ from django.shortcuts import render,HttpResponse
 #Home
 def home(request):
 
-    context ={
-        'variable1':"This is from variable1 context.",
-        'variable2':"This is from variable2 context.",
-        'variable3':"This is from variable3 context.",
-    }
+    #context ={
+        #'variable1':"This is from variable1 context.",
+        #'variable2':"This is from variable2 context.",
+        #'variable3':"This is from variable3 context.",
+    #}
 
     #return HttpResponse("This is my home page")
-    return render(request, 'index.html', context)
+    return render(request, 'index.html')
 
 #About
 def about(request):
-    return HttpResponse("This is my about page")
+    return render(request, 'about.html')
 
 #Services
 def services(request):
-    return HttpResponse("This is my services page")
+    return render(request, 'services.html')
 
 #Contact
 def contact(request):
-    return HttpResponse("This is my contact page")
+    return render(request, 'contact.html')
 
